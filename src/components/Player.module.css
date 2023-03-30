@@ -1,0 +1,144 @@
+/** @format */
+
+.player {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-control {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.time-control input {
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.time-control p {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 40%;
+  padding: 2rem;
+}
+
+.play-control svg {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background-color: rgb(19, 18, 18);
+  padding: 0.2rem;
+  transition: all 0.5s;
+}
+
+.btn svg {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.play {
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.play svg {
+  color: white;
+}
+
+.play svg:hover {
+  background-color: #fff;
+  border-radius: 50%;
+  color: black;
+  transform: scale(1.2);
+}
+
+.track {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.animate-track {
+  background: rgb(204, 204, 204);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  padding: 1rem;
+  pointer-events: none;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .play-control {
+    width: 50%;
+  }
+
+  .btn svg {
+    font-size: 2rem;
+  }
+  .volume svg {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .btn {
+    padding: 0.2rem;
+  }
+
+  .btn svg {
+    font-size: 1.9rem;
+  }
+
+  .volume svg {
+    font-size: 1.9rem;
+  }
+}

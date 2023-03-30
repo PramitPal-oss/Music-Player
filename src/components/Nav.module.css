@@ -1,0 +1,47 @@
+/** @format */
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid red;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+.library-active {
+  /*background: rgb(65, 65, 65); */
+  color: black;
+}
+
+nav button:hover {
+  background: rgb(65, 65, 65);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  nav button {
+    z-index: 10;
+  }
+}

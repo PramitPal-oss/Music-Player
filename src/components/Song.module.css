@@ -1,0 +1,44 @@
+/** @format */
+
+.song-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-container img {
+  width: 25%;
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+
+.song-container h2 {
+  padding: 3rem 1rem 1rem 1rem;
+  color: #fff;
+}
+
+.song-container h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.rotateSong {
+  animation: rotate 20s linear forwards infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container img {
+    width: 60%;
+  }
+}
